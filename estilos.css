@@ -1,4 +1,4 @@
-﻿ /* esto es lo global, osea la tipografia, reseteo de imagenes, y el fondo negro*/ 
+/* esto es lo global, osea la tipografia, reseteo de imagenes, y el fondo negro*/ 
 @font-face {
     font-family: 'Makcasa';
     src: url('Makcasa-Regular.ttf') format('truetype');
@@ -899,58 +899,51 @@ body {
 }
 
 .nebula-card {
-    background-image: url("Fondo ss.jpg"); /*fondo*/
+    background-image: url("Fondo ss.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     padding: 20px;
     border: 3px solid #ffb7d5; 
-    
-    /* Un brillo */
     box-shadow: 0 0 15px rgba(255, 183, 213, 0.4); 
-    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto al pasar el mouse sobre la tarjeta */
 .nebula-card:hover {
     transform: translateY(-8px);
-    /* El brillo se intensifica un poquito al pasar el cursor */
     box-shadow: 0 0 25px rgba(255, 183, 213, 0.7); 
 }
 
-.universe-page {
+/* Página de Galaxias con fondo */
+.galaxies-page {
+    min-height: 100vh;
     background-image: url("Galaxia-2.WEBP"); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
     background-repeat: no-repeat;
-    background-color: #000000; 
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
 
-    .nebula-card-neon {
-    /* Fondo oscuro semi-transparente para que se alcance a ver la galaxia de atrás */
+/* Tarjetas Neón para la página de Galaxias */
+.nebula-card-neon {
     background: rgba(15, 10, 25, 0.75); 
-    backdrop-filter: blur(8px); /* Efecto difuminado elegante */
-    
+    backdrop-filter: blur(8px);
     border-radius: 24px;
     padding: 24px;
     width: 280px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    
-    /* El borde rosa pastel notable */
     border: 3px solid #ffb7d5;
-    
-    /* Efecto de luz neón rosa vibrante */
     box-shadow: 0 0 18px rgba(255, 183, 213, 0.7), 
                 inset 0 0 15px rgba(255, 183, 213, 0.4),
                 0 0 35px rgba(255, 105, 180, 0.4);
-                
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
 }
 
-/* El neón rosa se enciende aún más fuerte al pasar el mouse */
 .nebula-card-neon:hover {
     transform: translateY(-12px) scale(1.02);
     border-color: #ffffff;
@@ -958,5 +951,4 @@ body {
     box-shadow: 0 0 30px rgba(255, 183, 213, 1), 
                 inset 0 0 20px rgba(255, 183, 213, 0.7),
                 0 0 55px rgba(255, 105, 180, 0.7);
-}
 }
